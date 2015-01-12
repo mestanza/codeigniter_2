@@ -14,3 +14,5 @@ Tabla venta_actual
 	
 	Te falta es la FK id_venta_prod -> producto (id_prod)
 	- quita la PK en la columna id_venta_prod, no es necesario, te lo dije la vez pasada...
+	
+	Just checking integration!!
