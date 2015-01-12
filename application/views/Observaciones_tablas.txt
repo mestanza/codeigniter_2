@@ -1,0 +1,16 @@
+Tabla categoria:
+	- prod_categoria QUITALOOOOOOOOOOOO TE LO DIJE LA OTRA VEEEEZ!!!, coloca la FK en producto. coloca en producto la columna categoria -> categoria(id_categoria)
+	
+Tabla venta_actual
+	- Tiene una FK repetida
+	
+	ALTER TABLE ONLY venta_actual
+    ADD CONSTRAINT id_actual FOREIGN KEY (id_actual) REFERENCES venta(id_venta);
+
+	ALTER TABLE ONLY venta_actual
+    ADD CONSTRAINT venta_id FOREIGN KEY (id_actual) REFERENCES venta(id_venta);
+
+	Ambos van al mismo campo local y referencian a venta(id_venta)
+	
+	Te falta es la FK id_venta_prod -> producto (id_prod)
+	- quita la PK en la columna id_venta_prod, no es necesario, te lo dije la vez pasada...
